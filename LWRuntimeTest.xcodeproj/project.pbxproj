@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69237E7E1DA89BE7008A179D /* LWPrintClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69237E7D1DA89BE7008A179D /* LWPrintClassInfo.m */; };
+		69237E811DA8A055008A179D /* LWInterceptFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69237E801DA8A055008A179D /* LWInterceptFunction.m */; };
+		69237E841DA8A0E2008A179D /* LWFunctionAccept.m in Sources */ = {isa = PBXBuildFile; fileRef = 69237E831DA8A0E2008A179D /* LWFunctionAccept.m */; };
 		692D14471D9E39ED002985AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D14461D9E39ED002985AB /* main.m */; };
 		692D144A1D9E39ED002985AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D14491D9E39ED002985AB /* AppDelegate.m */; };
 		692D144D1D9E39ED002985AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D144C1D9E39ED002985AB /* ViewController.m */; };
@@ -22,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69237E7C1DA89BE7008A179D /* LWPrintClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPrintClassInfo.h; sourceTree = "<group>"; };
+		69237E7D1DA89BE7008A179D /* LWPrintClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPrintClassInfo.m; sourceTree = "<group>"; };
+		69237E7F1DA8A055008A179D /* LWInterceptFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWInterceptFunction.h; sourceTree = "<group>"; };
+		69237E801DA8A055008A179D /* LWInterceptFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWInterceptFunction.m; sourceTree = "<group>"; };
+		69237E821DA8A0E2008A179D /* LWFunctionAccept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFunctionAccept.h; sourceTree = "<group>"; };
+		69237E831DA8A0E2008A179D /* LWFunctionAccept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFunctionAccept.m; sourceTree = "<group>"; };
 		692D14421D9E39ED002985AB /* LWRuntimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWRuntimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D14461D9E39ED002985AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		692D14481D9E39ED002985AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +66,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69237E7A1DA89BB8008A179D /* 获取类的信息列表 */ = {
+			isa = PBXGroup;
+			children = (
+				69237E7C1DA89BE7008A179D /* LWPrintClassInfo.h */,
+				69237E7D1DA89BE7008A179D /* LWPrintClassInfo.m */,
+			);
+			path = "获取类的信息列表";
+			sourceTree = "<group>";
+		};
+		69237E7B1DA89BB8008A179D /* 拦截方法调用 */ = {
+			isa = PBXGroup;
+			children = (
+				69237E7F1DA8A055008A179D /* LWInterceptFunction.h */,
+				69237E801DA8A055008A179D /* LWInterceptFunction.m */,
+				69237E821DA8A0E2008A179D /* LWFunctionAccept.h */,
+				69237E831DA8A0E2008A179D /* LWFunctionAccept.m */,
+			);
+			path = "拦截方法调用";
+			sourceTree = "<group>";
+		};
 		692D14391D9E39ED002985AB = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +108,8 @@
 				692D14771D9F4C15002985AB /* 访问修改私有属性 */,
 				692D147A1D9F4C15002985AB /* 交换系统类方法 */,
 				692D14811D9F4C15002985AB /* 扩展系统类属性 */,
+				69237E7A1DA89BB8008A179D /* 获取类的信息列表 */,
+				69237E7B1DA89BB8008A179D /* 拦截方法调用 */,
 				692D14481D9E39ED002985AB /* AppDelegate.h */,
 				692D14491D9E39ED002985AB /* AppDelegate.m */,
 				692D144B1D9E39ED002985AB /* ViewController.h */,
@@ -209,6 +240,9 @@
 				692D148B1D9F4C15002985AB /* UIButton+ExpansionAttribute.m in Sources */,
 				692D14861D9F4C15002985AB /* LWPrivateAttribute.m in Sources */,
 				692D14891D9F4C15002985AB /* UILabel+ExchangeMethod.m in Sources */,
+				69237E811DA8A055008A179D /* LWInterceptFunction.m in Sources */,
+				69237E841DA8A0E2008A179D /* LWFunctionAccept.m in Sources */,
+				69237E7E1DA89BE7008A179D /* LWPrintClassInfo.m in Sources */,
 				692D148A1D9F4C15002985AB /* NSString+ExpansionAttribute.m in Sources */,
 				692D144A1D9E39ED002985AB /* AppDelegate.m in Sources */,
 				692D14471D9E39ED002985AB /* main.m in Sources */,
@@ -367,6 +401,7 @@
 				692D145B1D9E39ED002985AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

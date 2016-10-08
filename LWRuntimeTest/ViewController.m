@@ -14,6 +14,8 @@
 #import "UIButton+ExpansionAttribute.h"
 #import "NSString+ExchangeMethod.h"
 #import "LWPrivateAttribute.h"
+#import "LWPrintClassInfo.h"
+#import "LWInterceptFunction.h"
 
 @interface ViewController ()
 
@@ -31,7 +33,8 @@
     
     //测试UIButton分类扩展属性
     UIButton *button=[[UIButton alloc]initWithFrame:CGRectMake((kScreen_Width-80)/2, 40, 80, 40)];
-    [button setTitle:@"测试按钮" forState:UIControlStateNormal];
+//    [button setTitle:@"测试按钮" forState:UIControlStateNormal];
+//    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     button.backgroundColor=[UIColor greenColor];
     button.someId=@"123456";
     button.buttonTypeNum=[NSNumber numberWithInt:10];
@@ -50,6 +53,13 @@
     
     //测试访问修改私有属性
     [LWPrivateAttribute testViewAndModifyPA];
+    
+    //测试获取类的信息列表
+    [LWPrintClassInfo testPrintClass];
+    
+    LWInterceptFunction *lwif=[[LWInterceptFunction alloc]init];
+    [lwif performSelector:@selector(resolveAdd:) withObject:@"testAdd"];
+    [lwif performSelector:@selector(resolveForward:) withObject:@"testForward"];
 }
 
 - (void)buttonClick:(UIButton *)sender{
